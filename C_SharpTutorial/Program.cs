@@ -17,12 +17,18 @@ class Solution
 
         //new Example().checkingInternalClass();
 
+        Product.totalNoOfProduct = 0;
+
         Product p1, p2, p3;
         p1 = new Product();
+        Product.totalNoOfProduct++;
         p2 = new Product();
+        Product.totalNoOfProduct++;
         p3 = new Product();
+        Product.totalNoOfProduct++;
 
-//initializong fields from main only....not a good practice.
+
+        //initializong fields from main only....not a good practice.
         p1.productID = 1001;
         p1.productName = "Mobile";
         p1.cost = 20000;
@@ -41,6 +47,8 @@ class Solution
 
        // System.Console.WriteLine(p1);
         p1.printProduct();
+        p2.printProduct();
+        p3.printProduct();
 
 
     }
